@@ -49,7 +49,7 @@ public class CameraController {
         return new ResponseEntity<Object>(map, HttpStatus.OK);
     }
 
-    @PatchMapping("/camera/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<Object> addEvent(@PathVariable String id, @RequestBody Event event){
         HashMap<String, Object> map = new HashMap<>();
         map.put("msg", "Update Event In Camera Succes!");
